@@ -66,6 +66,7 @@ app.get('/video/:fileId', async (req, res) => {
 });
 
 app.get('/health', (req, res) => {
+    res.set('Access-Control-Allow-Origin', '*'); // allow all origins
     res.status(200).json({ status: 'OK', message: 'Project is live!' });
 });
 
