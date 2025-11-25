@@ -66,7 +66,7 @@ app.get('/video/:fileId', async (req, res) => {
 });
 
 app.get('/health', (req, res) => {
-    res.status(200).json({ status: 'OK', message: 'Project is!' });
+    res.status(200).json({ status: 'OK', message: 'Project is live!' });
 });
 
 const PORT = process.env.PORT || 3000;
